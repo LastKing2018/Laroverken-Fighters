@@ -14,11 +14,11 @@ namespace Läroverket_Fighters
             //
             //Character HP
             int playerHP = randomizer.Next(25, 50);
-            int enemyHP = randomizer.Next(5, 30);
+            
 
             //Character damage
             int playerDmg = randomizer.Next(2, 10);
-            int enemyDmg = randomizer.Next(2, 10);
+            
 
             string[] enemyNames =
             {
@@ -29,7 +29,9 @@ namespace Läroverket_Fighters
                 "Jonas"
             };
             string enemyName = 
-                enemyNames[randomizer.Next(0, enemyNames.Length)];
+                enemyNames[randomizer.Next(0, enemyNames.Length)];  
+
+            enemy.hp
 
             Console.Write(enemyName);
             Console.ReadKey();
